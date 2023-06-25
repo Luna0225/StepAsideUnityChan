@@ -21,7 +21,7 @@ public class UnityChanController : MonoBehaviour
     private float velocityY = 10f;
 
     //左右の移動できる範囲
-    private float movableRange = 3.4f;
+    private float movableRange = 100f; //3.4f;
 
     //動きを減速させる係数
     private float coefficient = 0.99f;
@@ -88,18 +88,18 @@ public class UnityChanController : MonoBehaviour
         float inputVelocityY = 0;
 
         //Unityちゃんを矢印キーまたはボタンに応じて左右に移動させる
-        if(Input.GetKey(KeyCode.LeftArrow) || this.isLButtonDown && -this.movableRange < this.transform.position.x)
+        if((Input.GetKey(KeyCode.LeftArrow) || this.isLButtonDown) && -this.movableRange < this.transform.position.x)
         {
             //左方向への速度を代入
             inputVelocityX = -this.velocityX;
         }
-        else if(Input.GetKey(KeyCode.RightArrow) || this.isRButtonDown && this.transform.position.x < this.movableRange)
+        else if((Input.GetKey(KeyCode.RightArrow) || this.isRButtonDown) && this.transform.position.x < this.movableRange)
         {
             //右方向への速度を代入
             inputVelocityX = this.velocityX;
         }
         //ジャンプしていないときにスペースまたはボタンが押されたらジャンプする
-        if(Input.GetKey(KeyCode.Space) || this.isJButtonDown && this.transform.position.y < 0.5f)
+        if((Input.GetKey(KeyCode.Space) || this.isJButtonDown) && this.transform.position.y < 0.5f)
         {
             //ジャンプアニメを再生
             this.myAnimator.SetBool("Jump", true);
