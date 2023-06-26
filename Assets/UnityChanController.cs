@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class UnityChanController : MonoBehaviour
 {
+
     //アニメーションするためのコンポーネントを入れる
     private Animator myAnimator;
 
@@ -66,6 +67,7 @@ public class UnityChanController : MonoBehaviour
         //シーン中のスコアテキストを表示
         this.scoreText = GameObject.Find("ScoreText");
 
+        
 
     }
 
