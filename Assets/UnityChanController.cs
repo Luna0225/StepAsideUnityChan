@@ -22,7 +22,7 @@ public class UnityChanController : MonoBehaviour
     private float velocityY = 10f;
 
     //¶‰E‚ÌˆÚ“®‚Å‚«‚é”ÍˆÍ
-    private float movableRange = 100f; //3.4f;
+    private float movableRange = 3.4f;
 
     //“®‚«‚ğŒ¸‘¬‚³‚¹‚éŒW”
     private float coefficient = 0.99f;
