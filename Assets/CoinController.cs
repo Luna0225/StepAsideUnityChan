@@ -18,8 +18,4 @@ public class CoinController : MonoBehaviour
         //‰ñ“]
         this.transform.Rotate(0, 3, 0);
     }
-    private void OnBecameInvisible()
-    {
-        Destroy(this.gameObject);
-    }
 }

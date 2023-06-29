@@ -1056,6 +1056,8 @@ MonoBehaviour:
   conePrefab: {fileID: 7909271892579637791, guid: a8df266ecc807db46836a1afc56e015a, type: 3}
   startPos: 80
   goalPos: 360
+  unitychan: {fileID: 0}
+  movePosition: 0
 --- !u!4 &799644756
 Transform:
   m_ObjectHideFlags: 0

@@ -49,6 +49,9 @@ public class UnityChanController : MonoBehaviour
     private bool isJButtonDown = false;
 
 
+    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,8 +70,8 @@ public class UnityChanController : MonoBehaviour
         //シーン中のスコアテキストを表示
         this.scoreText = GameObject.Find("ScoreText");
 
-        
 
+        
     }
 
     // Update is called once per frame
@@ -120,6 +123,9 @@ public class UnityChanController : MonoBehaviour
         }
         //Unityちゃんに速度を与える
         this.myRigidbody.velocity = new Vector3(inputVelocityX, 0, this.velocityZ);
+
+
+       
     }
     //トリガーモードで他のオブジェクトと接触下場合の処理
     private void OnTriggerEnter(Collider other)
