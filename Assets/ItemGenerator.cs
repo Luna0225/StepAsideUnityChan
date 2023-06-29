@@ -29,7 +29,7 @@ public class ItemGenerator : MonoBehaviour
     public GameObject unitychan;
 
     //unityちゃんの初期位置
-    public float movePosition = 0f;
+    public float movePosition;
 
 
 
@@ -100,7 +100,7 @@ public class ItemGenerator : MonoBehaviour
         float unityChanPosition = unitychan.transform.position.z;
 
 
-        //舞フレーム呼び出してるせいでアイテムの生成が止まらなくなってる？
+        //unityちゃんが30m進むごとに50m先にオブジェクトを生成
         if (unityChanPosition >= movePosition)
         {
             movePosition += 30;
